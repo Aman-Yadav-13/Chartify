@@ -78,7 +78,7 @@ app.get('/new-customers-added-over-time', async (req, res) => {
     }
 })
 
-app.listen(process.env.PORT, (error) => {
+app.listen(process.env.PORT || 3000, (error) => {
     if(error){
         console.log("Error in starting server ...");
     }else{
